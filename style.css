@@ -1,6 +1,17 @@
+/* Agora que notei que poderia ter feito duas div na main, uma pro feed e stories e uma pra side-bar e colocar uma do lado da outra, não irei alterar, mas fica ai a dica */
+
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5
+}
+.guardar {
+    display: none;
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
 }
 a {
     text-decoration: none;
@@ -8,8 +19,8 @@ a {
 a:visited {
     color: inherit;
 }
-::-webkit-scrollbar {
-    width: 0px;
+main {
+    width: 980px;
 }
 /* Estilos para o topo da pagina */
 .topo-pagina {
@@ -31,7 +42,7 @@ a:visited {
 
 .conteudo-topo{
     display: flex;
-    width: 935px;
+    width: 980px;
     height: 29px;
     align-items: center;
     justify-content: space-between;
@@ -72,6 +83,7 @@ a:visited {
     justify-content: space-between;
     align-items: center;
     width: 144px;
+    margin-right: 20px;
 }
 
 /* Estilos para os conteudos da página */
@@ -81,7 +93,6 @@ a:visited {
     height: 100%;
     width: 614px;
     margin-top: 88px;
-    margin-left: 215px;
 }
 
 /* Estilos para o Stories */
@@ -118,7 +129,7 @@ a:visited {
 /* Estilos para a Side-bar */
 .side-bar {
     margin-top: 20px;
-    left: calc(28px + 614px + 215px);
+    margin-left: 650px;
     position: fixed;
     width: 293px; 
 }
@@ -217,7 +228,6 @@ a:visited {
     display: flex;
     flex-direction: column;
     height: 749px;
-    
     margin-bottom: 60px;
     border: 1px solid #DBDBDB;
 }
@@ -314,8 +324,69 @@ a:visited {
         flex-direction: column;
         align-items: center;
     }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .conteudo-principal {
         margin-left: 0px;
     }
     
+}
+
+/* Site Mobile */
+@media (max-width: 614px) {
+    .conteudo-principal {
+        width: inherit;
+        margin-top: 50px;
+    }
+    body {
+        width: 100vw;
+    }
+    main {
+        width: 100%;
+    }
+    .guardar {
+        display: flex;
+        width: 103px;
+        height: 29px;
+    }
+    .sumir {
+        width: 0px;
+        height: 0px;
+        font-size: 0px;
+    }
+    /* arruma a parte do header */
+    .lado-direito {
+        margin-right: 15px;
+        width: 25px;
+    }
+    .topo-pagina {
+        width: 100%;
+    }
+    .conteudo-topo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* arruma a parte dos stories */
+    .caixa-stories {
+        margin: 0px;
+        left: 650px;
+        width: inherit;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .grid-stories {
+        left: 650px;
+    }
+
+    /* arruma o feed */
+    .feed {
+        margin-top: 0px;
+    }
+    .conteudo-feed {
+        height: auto;
+    }
 }
