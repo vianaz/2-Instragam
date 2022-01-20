@@ -1,0 +1,299 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+/* Estilos para o topo da pagina */
+.topo-pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    border-bottom: 1px solid #DBDBDB;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+.logos {
+    font-size: 25px;
+    color: black;
+}
+
+.conteudo-topo{
+    display: flex;
+    width: 935px;
+    height: 29px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lado-esquerdo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lado-esquerdo > img {
+    margin-top: 5px;
+}
+
+.barra-divisoria {
+    width: 2px;
+    height: 22px;
+    background-color: #DBDBDB;;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.barra-pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DBDBDB;;
+    width: 215px;
+    height: 26px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #979797;
+}
+
+.lado-direito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 144px;
+}
+
+/* Estilos para os conteudos da página */
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 614px;
+    margin-top: 88px;
+    margin-left: 215px;
+}
+
+/* Estilos para o Stories */
+.caixa-stories {
+    width: 614px;
+    height: 118px;
+    border: 1px solid #DBDBDB;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.grid-stories {
+    display: flex;
+    margin-top: 23px;
+}
+.storie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+.storie > img {
+    padding: 5px;
+    background-image: url(img/stories_background\ 2.svg);
+}
+
+
+
+
+/* Estilos para a Side-bar */
+.side-bar {
+    margin-top: 20px;
+    left: calc(28px + 614px + 215px);
+    position: fixed;
+    width: 293px; 
+}
+/* estilos Seu Perfil */
+.seu-perfil {
+    display: flex;
+    align-items: center;
+    height: 56px;
+}
+.nome-perfil {
+    margin-left: 17px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.username {
+    font-weight: 500;
+}
+.nome-real {
+    font-weight: 300;
+}
+/* Estilo Sugestão Perfil */
+.sugestao-perfil {
+    height: calc(15px + 209px + 32px);
+    
+    margin-top: 24px;
+}
+.titulo-sugestao {
+    display: flex;
+    justify-content: space-between;
+    height: 15px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+.cinzinha {
+    color: #948d8d;;
+}
+.perfil-sugestao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17px;
+}
+.perfil-sugestao > p {
+    color: #139EF2;
+    font-size: 12px;
+}
+.foto-perfil-sugestao {
+    display: flex;
+}
+.nomeperfil-sugestao {
+    margin-left: 17px;
+}
+.nomeperfil-sugestao {
+    font-size: 14px;
+}
+.nomeperfil-sugestao .cinzinha {
+    margin-top: 6px;
+    font-size: 12px;
+}
+.perfil-sugestao2 {
+    margin-top: 17px;
+    height: 32px;
+    background-color: blanchedalmond
+}
+.perfil-sugestao3 {
+    margin-top: 17px;
+    height: 32px;
+    background-color: rgb(226, 43, 43);
+}
+.perfil-sugestao4 {
+    margin-top: 17px;
+    height: 32px;
+    background-color: rgb(43, 220, 226);
+}
+/* Esitlo Créditos */
+.creditos {
+    margin-top: 33px;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+
+
+/* Estilos para o FEED */
+.feed {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 24px;
+
+}
+/* boxes do feed */
+.conteudo-feed {
+    display: flex;
+    flex-direction: column;
+    height: 749px;
+    
+    margin-bottom: 60px;
+    border: 1px solid #DBDBDB;
+}
+/* topo conteiner */
+.topo-conteiner-conteudo {
+    display: flex;
+    align-items: center;
+    height: 61px;
+    background-color: white;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+/* div com icones */
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 17px;
+    margin-right: 18px;
+    width: 100%;
+}
+/* parte do perfil */
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+}
+.perfil a{
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16,42px;
+}
+/* pontinhos */
+.pontinhos {
+    height: 32px;
+    color: black;
+}
+/* base da box */
+.base-conteiner-conteudo {
+    height: 81px;
+    background-color: white;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+.conteudo-base {
+    margin: 14px 18px 14px 17px
+}
+/* estilo dos icones */
+.com-icones {
+    display: flex;
+    justify-content: space-between;
+}
+.icones-esquerda > a {
+    margin-right: 12px;
+}
+
+/* estilos parte sem icones */
+.sem-icones {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.sem-icones > p {
+    margin-left: 5px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+.sem-icones  strong {
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
