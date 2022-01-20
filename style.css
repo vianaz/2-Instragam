@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #E5E5E5;
+    background-color: #E5E5E5
 }
 a {
     text-decoration: none;
@@ -296,4 +296,26 @@ a:visited {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+}
+
+/* Site Desktop sem side-bar  */
+@media (max-width: 935px) {
+    .side-bar {
+        display: none;
+    }
+    .lado-direito {
+        margin-right: 21px;
+    }
+    .lado-esquerdo {
+        margin-left: 21px;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo-principal {
+        margin-left: 0px;
+    }
+    
 }
