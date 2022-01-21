@@ -97,12 +97,22 @@ main {
 
 /* Estilos para o Stories */
 .caixa-stories {
+    position: relative;
     width: 614px;
     height: 118px;
     border: 1px solid #DBDBDB;
     background-color: white;
     border-radius: 5px;
     overflow: hidden;
+    z-index: -1;
+}
+.setinha {
+    color: rgb(255, 255, 255);
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    font-size: 35px;
+    position: absolute;
+    top: 37px;
+    right: 0;
 }
 .grid-stories {
     display: flex;
@@ -221,7 +231,7 @@ main {
     flex-direction: column;
     height: 100%;
     margin-top: 24px;
-
+    z-index: -1;
 }
 /* boxes do feed */
 .conteudo-feed {
@@ -372,6 +382,7 @@ main {
 
     /* arruma a parte dos stories */
     .caixa-stories {
+        position: static;
         margin: 0px;
         left: 650px;
         width: inherit;
@@ -381,7 +392,10 @@ main {
     .grid-stories {
         left: 650px;
     }
-
+    .setinha {
+        display: none;
+        font-size: 0px;
+    }
     /* arruma o feed */
     .feed {
         margin-top: 0px;
