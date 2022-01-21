@@ -34,6 +34,7 @@ main {
     left: 0;
     right: 0;
     background-color: white;
+    z-index: 2;
 }
 .logos {
     font-size: 25px;
@@ -231,7 +232,7 @@ main {
     flex-direction: column;
     height: 100%;
     margin-top: 24px;
-    z-index: -1;
+    z-index: 0;
 }
 /* boxes do feed */
 .conteudo-feed {
@@ -259,6 +260,22 @@ main {
     margin-left: 17px;
     margin-right: 18px;
     width: 100%;
+}
+.foto {
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    border: 2px solid #DBDBDB;
+}
+.videozinho {
+    display: flex;
+    width: 612px;
+    height: 612px;
+    background-color: black;
+}
+.videozinho > video {
+    width: 612px;
+    height: 612px;
 }
 /* parte do perfil */
 .perfil {
@@ -399,6 +416,13 @@ main {
     /* arruma o feed */
     .feed {
         margin-top: 0px;
+        width: 100vw;
+    }
+    .videozinho > img {
+        width: 100vw;
+    }
+    .videozinho > video {
+        width: 100vw;
     }
     .conteudo-feed {
         height: auto;
